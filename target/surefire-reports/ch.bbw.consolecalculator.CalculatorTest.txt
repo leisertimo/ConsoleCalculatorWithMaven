@@ -1,8 +1,4 @@
 -------------------------------------------------------------------------------
 Test set: ch.bbw.consolecalculator.CalculatorTest
 -------------------------------------------------------------------------------
-Tests run: 2, Failures: 1, Errors: 0, Skipped: 0, Time elapsed: 0.001 s <<< FAILURE! - in ch.bbw.consolecalculator.CalculatorTest
-testSubtraktionZweiPositiveIsOk(ch.bbw.consolecalculator.CalculatorTest)  Time elapsed: 0.001 s  <<< FAILURE!
-java.lang.AssertionError
-	at ch.bbw.consolecalculator.CalculatorTest.testSubtraktionZweiPositiveIsOk(CalculatorTest.java:25)
-
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 s - in ch.bbw.consolecalculator.CalculatorTest
