@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" name="ch.bbw.consolecalculator.AppTest" time="0.039" tests="1" errors="0" skipped="0" failures="0">
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" name="ch.bbw.consolecalculator.CalculatorTest" time="0.001" tests="2" errors="0" skipped="0" failures="1">
   <properties>
     <property name="sun.desktop" value="windows"/>
     <property name="awt.toolkit" value="sun.awt.windows.WToolkit"/>
@@ -61,5 +61,10 @@
     <property name="sun.io.unicode.encoding" value="UnicodeLittle"/>
     <property name="java.class.version" value="54.0"/>
   </properties>
-  <testcase name="shouldAnswerWithTrue" classname="ch.bbw.consolecalculator.AppTest" time="0.002"/>
+  <testcase name="testSummeZweiPositiveIsOk" classname="ch.bbw.consolecalculator.CalculatorTest" time="0"/>
+  <testcase name="testSubtraktionZweiPositiveIsOk" classname="ch.bbw.consolecalculator.CalculatorTest" time="0.001">
+    <failure type="java.lang.AssertionError">java.lang.AssertionError
+	at ch.bbw.consolecalculator.CalculatorTest.testSubtraktionZweiPositiveIsOk(CalculatorTest.java:25)
+</failure>
+  </testcase>
 </testsuite>
