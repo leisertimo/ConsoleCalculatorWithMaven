@@ -26,4 +26,8 @@ public class Calculator {
 	protected double quadratwurzel(double value1) {
 		return Math.sqrt(value1);
 	}
+	
+	double malPi(double value) {
+		return value * Math.PI;
+	}
 }

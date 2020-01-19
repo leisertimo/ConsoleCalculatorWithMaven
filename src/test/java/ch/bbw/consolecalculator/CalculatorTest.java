@@ -62,5 +62,10 @@ public class CalculatorTest {
 	public void testWurzelEinePositiveOk() {
 		assertTrue(testee.quadratwurzel(64) == 8);
 	}
+	
+	@Test //package
+	public void testMalPiEinePositiveOk() {
+		//kann man nicht testen
+	}
 
 }
