@@ -40,6 +40,11 @@ public class CalculatorTest {
 	
 	@Test
 	public void testSubtraktionMaxValueUndPositiveIsOk() {
-		assertTrue(testee.subtraktion(Integer.MAX_VALUE, 5) == 51684);
+		assertTrue(testee.subtraktion(Integer.MAX_VALUE, 100) == 2147483547);
+	}
+	
+	@Test
+	public void testSubtraktionMinValueUndNegativeIsOk() {
+		assertTrue(testee.subtraktion(Integer.MIN_VALUE, -100) == -2147483548);
 	}
 }
