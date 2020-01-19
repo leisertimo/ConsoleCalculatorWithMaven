@@ -52,5 +52,10 @@ public class CalculatorTest {
 	public void testDivisionDividedByZeroIsNOk() {
 		testee.division(10, 0);
 	}
+	
+	@Test
+	public void testDivisionZweiPositiveIsOk() {
+		assertTrue(testee.division(10, 2) == 5);
+	}
 
 }
