@@ -72,4 +72,9 @@ public class CalculatorTest {
 	public void testSubtraktionZweiPositiveGreaterThanZero() {
 		assertTrue(testee.subtraktion(25, 10) > 0);
 	}
+	
+	@Test
+	public void testSubtraktionZweiNegativeLessThanZero() {
+		assertTrue(testee.subtraktion(-25, -10) < 0);
+	}
 }
