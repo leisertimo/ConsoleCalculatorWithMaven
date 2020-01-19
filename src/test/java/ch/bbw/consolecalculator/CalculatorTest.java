@@ -34,5 +34,4 @@ public class CalculatorTest {
 	public void testSubtraktionEinePositiveUndEineNegativeIsOk() {
 		assertTrue(testee.subtraktion(25, -10) == 35);
 	}
-	
 }
