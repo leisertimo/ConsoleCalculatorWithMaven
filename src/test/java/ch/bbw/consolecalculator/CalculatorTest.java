@@ -47,5 +47,15 @@ public class CalculatorTest {
 	public void testSummeEinePositiveUndEineNegativeIsOk() {
 		assertTrue(testee.summe(10, -25) == -15);
 	}
+	
+	@Test(expected = ArithmeticException.class)
+	public void testDivisionDividedByZeroIsNOk() {
+		testee.division(10, 0);
+	}
+	
+	@Test
+	public void testDivisionZweiPositiveIsOk() {
+		assertTrue(testee.division(10, 2) == 5);
+	}
 
 }
