@@ -116,4 +116,9 @@ public class CalculatorTest {
 	public void testSubtraktionZweiNegativeGreaterThanZero() {
 		assertTrue(testee.subtraktion(-10, -25) > 0);
 	}
+	
+	@Test
+	public void testSummeMaxValueUndNegativeIsOk() {
+		assertTrue(testee.summe(Integer.MAX_VALUE, -100) == 2147483547);
+	}
 }
