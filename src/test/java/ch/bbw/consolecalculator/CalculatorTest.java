@@ -136,4 +136,9 @@ public class CalculatorTest {
 	public void testSummeEinePositiveUndZeroIsOk() {
 		assertTrue(testee.summe(25, 0) == 25);
 	}
+	
+	@Test
+	public void testSummeEinePositiveUndEineNegativeIsGreaterThanZero() {
+		assertTrue(testee.summe(-10, 25) > 0);
+	}
 }
