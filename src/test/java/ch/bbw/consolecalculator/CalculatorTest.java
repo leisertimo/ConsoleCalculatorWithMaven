@@ -37,4 +37,9 @@ public class CalculatorTest {
 	public void testSubtraktionEinePositiveUndEineNegativeIsOk() {
 		assertTrue(testee.subtraktion(25, -10) == 35);
 	}
+	
+	@Test
+	public void testSubtraktionMaxValueUndPositiveIsOk() {
+		assertTrue(testee.subtraktion(Integer.MAX_VALUE, 5) == 51684);
+	}
 }
