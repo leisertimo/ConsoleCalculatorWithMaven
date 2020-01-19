@@ -18,4 +18,8 @@ public class Calculator {
 	public int subtraktion(int minuend , int subtrahend) {
 		return minuend - subtrahend;
 	}
+	
+	public double division(double dividend, double divisor) {
+		return dividend / divisor;
+	}
 }
