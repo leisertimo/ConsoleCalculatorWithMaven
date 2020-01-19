@@ -59,7 +59,11 @@
 				<mainClass>ch.bbw.consolecalculator.App</mainClass>
 			  </manifest>
 			</archive>
+<<<<<<< HEAD
 		  </configuration>		
+=======
+		  </configuration>
+>>>>>>> AdditionTesting
         </plugin>
         <plugin>
           <artifactId>maven-install-plugin</artifactId>

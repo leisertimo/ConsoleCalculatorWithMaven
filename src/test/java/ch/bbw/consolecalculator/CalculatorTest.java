@@ -34,4 +34,14 @@ public class CalculatorTest {
 	public void testSubtraktionEinePositiveUndEineNegativeIsOk() {
 		assertTrue(testee.subtraktion(25, -10) == 35);
 	}
+	
+	public void testSummeZweiNegativeIsOk() {
+		assertTrue(testee.summe(-10, -25) == -35);
+	}
+	
+	@Test
+	public void testSummeEinePositiveUndEineNegativeIsOk() {
+		assertTrue(testee.summe(10, -25) == -15);
+	}
+
 }
