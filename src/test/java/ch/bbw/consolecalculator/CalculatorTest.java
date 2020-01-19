@@ -141,4 +141,9 @@ public class CalculatorTest {
 	public void testSummeEinePositiveUndEineNegativeIsGreaterThanZero() {
 		assertTrue(testee.summe(-10, 25) > 0);
 	}
+	
+	@Test
+	public void testSummeEinePositiveUndEineNegativeIsLessThanZero() {
+		assertTrue(testee.summe(10, -25) < 0);
+	}
 }
