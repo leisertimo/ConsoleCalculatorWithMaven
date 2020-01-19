@@ -126,4 +126,9 @@ public class CalculatorTest {
 	public void testSummeMinValueUndPositiveIsOk() {
 		assertTrue(testee.summe(Integer.MIN_VALUE, 100) == -2147483548);
 	}
+	
+	@Test
+	public void testSummeEineNegativeUndZeroIsOk() {
+		assertTrue(testee.summe(-25, 0) == -25);
+	}
 }
