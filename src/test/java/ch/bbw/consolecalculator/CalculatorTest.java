@@ -47,4 +47,9 @@ public class CalculatorTest {
 	public void testSubtraktionMinValueUndNegativeIsOk() {
 		assertTrue(testee.subtraktion(Integer.MIN_VALUE, -100) == -2147483548);
 	}
+	
+	@Test
+	public void testSubtraktionPositiveUndZeroIsOk() {
+		assertTrue(testee.subtraktion(25, 0) == 25);
+	}
 }
