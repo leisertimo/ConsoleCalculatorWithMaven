@@ -60,6 +60,11 @@ public class CalculatorTest {
 	
 	@Test
 	public void testSubtraktionPositiveUndNegativeLessThanZero() {
-		assertTrue(testee.subtraktion(10, -25) < 0);
+		assertTrue(testee.subtraktion(-25, 10) < 0);
+	}
+	
+	@Test
+	public void testSubtraktionZweiPositiveLessThanZero() {
+		assertTrue(testee.subtraktion(10, 25) < 0);
 	}
 }
