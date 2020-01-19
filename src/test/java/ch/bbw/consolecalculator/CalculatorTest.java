@@ -116,4 +116,34 @@ public class CalculatorTest {
 	public void testSubtraktionZweiNegativeGreaterThanZero() {
 		assertTrue(testee.subtraktion(-10, -25) > 0);
 	}
+	
+	@Test
+	public void testSummeMaxValueUndNegativeIsOk() {
+		assertTrue(testee.summe(Integer.MAX_VALUE, -100) == 2147483547);
+	}
+	
+	@Test
+	public void testSummeMinValueUndPositiveIsOk() {
+		assertTrue(testee.summe(Integer.MIN_VALUE, 100) == -2147483548);
+	}
+	
+	@Test
+	public void testSummeEineNegativeUndZeroIsOk() {
+		assertTrue(testee.summe(-25, 0) == -25);
+	}
+	
+	@Test
+	public void testSummeEinePositiveUndZeroIsOk() {
+		assertTrue(testee.summe(25, 0) == 25);
+	}
+	
+	@Test
+	public void testSummeEinePositiveUndEineNegativeIsGreaterThanZero() {
+		assertTrue(testee.summe(-10, 25) > 0);
+	}
+	
+	@Test
+	public void testSummeEinePositiveUndEineNegativeIsLessThanZero() {
+		assertTrue(testee.summe(10, -25) < 0);
+	}
 }
