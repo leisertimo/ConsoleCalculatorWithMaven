@@ -23,5 +23,10 @@ public class CalculatorTest {
 	public void testSummeZweiNegativeIsOk() {
 		assertTrue(testee.summe(-10, -25) == -35);
 	}
+	
+	@Test
+	public void testSummeEinePositiveUndEineNegativeIsOk() {
+		assertTrue(testee.summe(10, -25) == -15);
+	}
 
 }
