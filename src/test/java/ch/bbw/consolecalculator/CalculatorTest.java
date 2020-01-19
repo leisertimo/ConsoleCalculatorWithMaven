@@ -121,4 +121,9 @@ public class CalculatorTest {
 	public void testSummeMaxValueUndNegativeIsOk() {
 		assertTrue(testee.summe(Integer.MAX_VALUE, -100) == 2147483547);
 	}
+	
+	@Test
+	public void testSummeMinValueUndPositiveIsOk() {
+		assertTrue(testee.summe(Integer.MIN_VALUE, 100) == -2147483548);
+	}
 }
