@@ -22,4 +22,8 @@ public class Calculator {
 	public double division(double dividend, double divisor) {
 		return dividend / divisor;
 	}
+	
+	protected double quadratwurzel(double value1) {
+		return Math.sqrt(value1);
+	}
 }

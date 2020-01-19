@@ -57,5 +57,10 @@ public class CalculatorTest {
 	public void testDivisionZweiPositiveIsOk() {
 		assertTrue(testee.division(10, 2) == 5);
 	}
+	
+	@Test //protected
+	public void testWurzelEinePositiveOk() {
+		assertTrue(testee.quadratwurzel(64) == 8);
+	}
 
 }
