@@ -65,7 +65,12 @@ public class CalculatorTest {
 	
 	@Test //package
 	public void testMalPiEinePositiveOk() {
-		//kann man nicht testen
+		//kann man nicht testen wegen Pi
+	}
+	
+	@Test //private deshalb kann es nicht getestet werden
+	public void testQuadratEinePositiveOk() {
+		//return
 	}
 
 }

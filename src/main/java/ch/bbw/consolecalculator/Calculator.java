@@ -30,4 +30,8 @@ public class Calculator {
 	double malPi(double value) {
 		return value * Math.PI;
 	}
+	
+	private double quadrat(double value) {
+		return value * value;
+	}
 }
