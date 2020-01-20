@@ -60,7 +60,12 @@ public class CalculatorTest {
 	
 	@Test
 	public void testDivisionEinePositiveUndEineNegativeIsLessThanZero() {
-		assertTrue(testee.division(32, -30) < 0);
+		assertTrue(testee.division(25, -10) < 0);
+	}
+	
+	@Test
+	public void testDivisionZweiNegativeGreaterThanZero() {
+		assertTrue(testee.division(-25, -10) > 0);
 	}
 
 }
