@@ -72,5 +72,10 @@ public class CalculatorTest {
 	public void testDivisionZweiNegativeIsOk() {
 		assertTrue(testee.division(-25, -10) == 2.5);
 	}
+	
+	@Test
+	public void testDivisionAequivalentIsOne() {
+		assertTrue(testee.division(25, 25) == 1);
+	}
 
 }
