@@ -77,5 +77,10 @@ public class CalculatorTest {
 	public void testDivisionAequivalentIsOne() {
 		assertTrue(testee.division(25, 25) == 1);
 	}
-
+	
+	@Test
+	public void testDivisionZweiMaxValueIsOne() {
+		assertTrue(testee.division(Integer.MAX_VALUE, Integer.MAX_VALUE) == 1);
+	}
+	
 }
