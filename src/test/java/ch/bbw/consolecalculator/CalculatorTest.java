@@ -146,4 +146,40 @@ public class CalculatorTest {
 	public void testSummeEinePositiveUndEineNegativeIsLessThanZero() {
 		assertTrue(testee.summe(10, -25) < 0);
 	}
+	
+	@Test
+	public void testDivisionEinePositiveUndEineNegativeIsLessThanZero() {
+		assertTrue(testee.division(25, -10) < 0);
+	}
+	
+	@Test
+	public void testDivisionZweiNegativeGreaterThanZero() {
+		assertTrue(testee.division(-25, -10) > 0);
+	}
+	
+	@Test
+	public void testDivisionZweiNegativeIsOk() {
+		assertTrue(testee.division(-25, -10) == 2.5);
+	}
+	
+	@Test
+	public void testDivisionAequivalentIsOne() {
+		assertTrue(testee.division(25, 25) == 1);
+	}
+	
+	@Test
+	public void testDivisionZweiMaxValueIsOne() {
+		assertTrue(testee.division(Integer.MAX_VALUE, Integer.MAX_VALUE) == 1);
+	}
+	
+	@Test
+	public void testDivisionZweiMinValueIsOne() {
+		assertTrue(testee.division(Integer.MIN_VALUE, Integer.MIN_VALUE) == 1);
+	}
+	
+	@Test
+	public void testDivisionZeroUndEinePositiveIsOk() {
+		assertTrue(testee.division(0, 10) == 0);
+	}
+	
 }
