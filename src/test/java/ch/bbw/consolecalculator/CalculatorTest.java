@@ -88,4 +88,9 @@ public class CalculatorTest {
 		assertTrue(testee.division(Integer.MIN_VALUE, Integer.MIN_VALUE) == 1);
 	}
 	
+	@Test
+	public void testDivisionZeroUndEinePositiveIsOk() {
+		assertTrue(testee.division(0, 10) == 0);
+	}
+	
 }
