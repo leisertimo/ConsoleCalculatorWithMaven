@@ -83,4 +83,9 @@ public class CalculatorTest {
 		assertTrue(testee.division(Integer.MAX_VALUE, Integer.MAX_VALUE) == 1);
 	}
 	
+	@Test
+	public void testDivisionZweiMinValueIsOne() {
+		assertTrue(testee.division(Integer.MIN_VALUE, Integer.MIN_VALUE) == 1);
+	}
+	
 }
