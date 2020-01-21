@@ -194,6 +194,8 @@ public class CalculatorTest {
 		assertTrue(testee.zinsesZins(Integer.MAX_VALUE, 3, 2) == 2.278926826065576E9);
 	}
 	
-	
-	
+	@Test
+	public void testZinseszinsKapitalMinValueIsOk() {
+		assertTrue(testee.zinsesZins(Integer.MIN_VALUE, 3, 2) == -2.278926827126784E9);
+	}
 }
