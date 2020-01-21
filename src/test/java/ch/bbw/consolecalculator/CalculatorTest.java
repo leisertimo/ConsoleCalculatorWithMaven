@@ -1,8 +1,9 @@
 package ch.bbw.consolecalculator;
 
-import static org.junit.Assert.*;
+import static org.junit.Assert.assertTrue;
 
 import org.junit.Before;
+import org.junit.Ignore;
 import org.junit.Test;
 
 /**
@@ -48,6 +49,7 @@ public class CalculatorTest {
 		assertTrue(testee.summe(10, -25) == -15);
 	}
 	
+	@Ignore
 	@Test(expected = ArithmeticException.class)
 	public void testDivisionDividedByZeroIsNOk() {
 		testee.division(10, 0);
@@ -182,4 +184,18 @@ public class CalculatorTest {
 		assertTrue(testee.division(0, 10) == 0);
 	}
 	
+	@Test
+	public void testZinseszinsAllePositiveIsOk() {
+		assertTrue(testee.zinsesZins(10000, 3, 2) == 10612.08);
+	}
+	
+	@Test
+	public void testZinseszinsKapitalMaxValueIsOk() {
+		assertTrue(testee.zinsesZins(Integer.MAX_VALUE, 3, 2) == 2.278926826065576E9);
+	}
+	
+	@Test
+	public void testZinseszinsKapitalMinValueIsOk() {
+		assertTrue(testee.zinsesZins(Integer.MIN_VALUE, 3, 2) == -2.278926827126784E9);
+	}
 }
