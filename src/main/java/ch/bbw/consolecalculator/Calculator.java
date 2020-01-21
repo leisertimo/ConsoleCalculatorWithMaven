@@ -34,4 +34,18 @@ public class Calculator {
 	private double quadrat(double value) {
 		return value * value;
 	}
+	
+	public double zinsesZins(double kapital, double jahre, double zinssatz) {
+
+		double zinsesZins;
+		double endKap;
+ 
+		for(int i = (int) jahre; i >= 0; i--) {			
+			zinsesZins = (kapital * jahre * zinssatz) / 100;
+			kapital = kapital + zinsesZins;
+		}
+	      endKap = kapital;
+	      
+	      return endKap;
+	  }  
 }
