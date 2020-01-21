@@ -40,12 +40,13 @@ public class Calculator {
 		double zinsesZins;
 		double endKap;
  
-		for(int i = (int) jahre; i >= 0; i--) {			
-			zinsesZins = (kapital * jahre * zinssatz) / 100;
+		for(int i = (int) jahre; i >= 1; i--) {			
+			zinsesZins = (kapital * 1 * zinssatz) / 100;
 			kapital = kapital + zinsesZins;
 		}
 	      endKap = kapital;
 	      
+	      System.out.println(endKap);
 	      return endKap;
 	  }  
 }

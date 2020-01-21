@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" name="ch.bbw.consolecalculator.CalculatorTest" time="0.003" tests="32" errors="0" skipped="0" failures="1">
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" name="ch.bbw.consolecalculator.CalculatorTest" time="0.003" tests="33" errors="0" skipped="1" failures="0">
   <properties>
     <property name="sun.desktop" value="windows"/>
     <property name="awt.toolkit" value="sun.awt.windows.WToolkit"/>
@@ -18,7 +18,7 @@
     <property name="sun.java.launcher" value="SUN_STANDARD"/>
     <property name="user.country" value="CH"/>
     <property name="sun.boot.library.path" value="U:\jdk-10.0.2\bin"/>
-    <property name="sun.java.command" value="C:\Users\Timo\AppData\Local\Temp\surefire8974242078081424680\surefirebooter17760051835765990530.jar C:\Users\Timo\AppData\Local\Temp\surefire8974242078081424680 2020-01-20T21-20-32_164-jvmRun1 surefire13705837513535742854tmp surefire_01855049264135243368tmp"/>
+    <property name="sun.java.command" value="C:\Users\Timo\AppData\Local\Temp\surefire17998185607264505907\surefirebooter12382833069071983293.jar C:\Users\Timo\AppData\Local\Temp\surefire17998185607264505907 2020-01-21T02-07-06_270-jvmRun1 surefire10171032090917802505tmp surefire_014660630748050970342tmp"/>
     <property name="jdk.debug" value="release"/>
     <property name="surefire.test.class.path" value="F:\BBW\Tools\EcpToolsPhoton\EcpTools\Workspace\ConsoleCalculatorWithMaven\target\test-classes;F:\BBW\Tools\EcpToolsPhoton\EcpTools\Workspace\ConsoleCalculatorWithMaven\target\classes;C:\Users\Timo\.m2\repository\junit\junit\4.11\junit-4.11.jar;C:\Users\Timo\.m2\repository\org\hamcrest\hamcrest-core\1.3\hamcrest-core-1.3.jar;"/>
     <property name="sun.cpu.endian" value="little"/>
@@ -34,7 +34,7 @@
     <property name="java.specification.name" value="Java Platform API Specification"/>
     <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
     <property name="java.awt.graphicsenv" value="sun.awt.Win32GraphicsEnvironment"/>
-    <property name="surefire.real.class.path" value="C:\Users\Timo\AppData\Local\Temp\surefire8974242078081424680\surefirebooter17760051835765990530.jar"/>
+    <property name="surefire.real.class.path" value="C:\Users\Timo\AppData\Local\Temp\surefire17998185607264505907\surefirebooter12382833069071983293.jar"/>
     <property name="user.script" value=""/>
     <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
     <property name="java.runtime.version" value="10.0.2+13"/>
@@ -69,7 +69,7 @@
   <testcase name="testSummeMaxValueUndNegativeIsOk" classname="ch.bbw.consolecalculator.CalculatorTest" time="0"/>
   <testcase name="testSummeEineNegativeUndZeroIsOk" classname="ch.bbw.consolecalculator.CalculatorTest" time="0"/>
   <testcase name="testWurzelEinePositiveOk" classname="ch.bbw.consolecalculator.CalculatorTest" time="0"/>
-  <testcase name="testSummeZweiPositiveIsOk" classname="ch.bbw.consolecalculator.CalculatorTest" time="0.001"/>
+  <testcase name="testSummeZweiPositiveIsOk" classname="ch.bbw.consolecalculator.CalculatorTest" time="0"/>
   <testcase name="testSummeEinePositiveUndEineNegativeIsOk" classname="ch.bbw.consolecalculator.CalculatorTest" time="0"/>
   <testcase name="testSummeZweiNegativeIsOk" classname="ch.bbw.consolecalculator.CalculatorTest" time="0"/>
   <testcase name="testSubtraktionZweiNegativeLessThanZero" classname="ch.bbw.consolecalculator.CalculatorTest" time="0"/>
@@ -82,12 +82,12 @@
   <testcase name="testDivisionAequivalentIsOne" classname="ch.bbw.consolecalculator.CalculatorTest" time="0"/>
   <testcase name="testDivisionZweiMaxValueIsOne" classname="ch.bbw.consolecalculator.CalculatorTest" time="0"/>
   <testcase name="testSubtraktionMinValueUndNegativeIsOk" classname="ch.bbw.consolecalculator.CalculatorTest" time="0"/>
-  <testcase name="testDivisionDividedByZeroIsNOk" classname="ch.bbw.consolecalculator.CalculatorTest" time="0.001">
-    <failure message="Expected exception: java.lang.ArithmeticException" type="java.lang.AssertionError">java.lang.AssertionError: Expected exception: java.lang.ArithmeticException
-</failure>
+  <testcase name="testDivisionDividedByZeroIsNOk" classname="ch.bbw.consolecalculator.CalculatorTest" time="0">
+    <skipped/>
   </testcase>
   <testcase name="testSubtraktionZweiPositiveIsOk" classname="ch.bbw.consolecalculator.CalculatorTest" time="0"/>
   <testcase name="testSubtraktionZweiNegativeIsOk" classname="ch.bbw.consolecalculator.CalculatorTest" time="0"/>
+  <testcase name="testZinseszinsPositiveValuesIsOk" classname="ch.bbw.consolecalculator.CalculatorTest" time="0.001"/>
   <testcase name="testSubtraktionZweiNegativeGreaterThanZero" classname="ch.bbw.consolecalculator.CalculatorTest" time="0"/>
   <testcase name="testSummeMinValueUndPositiveIsOk" classname="ch.bbw.consolecalculator.CalculatorTest" time="0"/>
   <testcase name="testSubtraktionPositiveUndZeroIsOk" classname="ch.bbw.consolecalculator.CalculatorTest" time="0"/>

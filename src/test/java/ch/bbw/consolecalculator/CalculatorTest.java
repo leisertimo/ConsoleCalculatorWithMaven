@@ -184,4 +184,9 @@ public class CalculatorTest {
 		assertTrue(testee.division(0, 10) == 0);
 	}
 	
+	@Test
+	public void testZinseszinsAllePositiveIsOk() {
+		assertTrue(testee.zinsesZins(10000, 3, 2) == 10612.08);
+	}
+	
 }
