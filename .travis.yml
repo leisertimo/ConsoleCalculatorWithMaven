@@ -8,10 +8,6 @@ deploy:
   provider: releases
   api_key:
     secure: ZH+VC7Hd2CxmcMqTNTxvtyeOBRV0HGXLa1CJEgfG0TzqHgRbqtEDVHxEH65Gt9N9cehDOcslXtlaWVs+3ukawDOQuCu/qXZ/pjlecjJICT5tG6t5j0ypYiry41HyG7YEn6Z+v0mBBCno6nh+L3fcT6TmAlKyM2oZNb8rKePpWmYVBxE+8ewAXC3BTZzcTC1ZigAGVfcCbzH/DuccJPV+JotZKclReZ+Yz8AJYq4yJAb9RGIgYfiiw7ol967jRdFKRZSsEKDlolFfmELe2zt+8SHRplwxe3zFtZtzSOxFTxpOTEqzWF/SlQsIsNVgL2kgUavjCUw9WF00HYN9ph5t91jxXYamiDX/eEZZhVZNviwUdznYAnDxljvXKXP2O10meVvDnJCv5TIs1AjgoKCpxveDiRu3s91gzrC1IIZTKlATgvAwXy78duIj/JyeJTXS94Pj3QFebatTCylu1B6GQVqj+ZzCUPg1eORdzXdRna+hHVcEX1gLi0u0263AMkFItDV+eB69Z85izxZJXorb1x7s+ShwtdDwL0yRViaA1U2FgzR0ckK0ynXEj2HxyfXQmrtb5stnSxjHOaTsfp5KABPwE2M61ZWLiwlxVypGpy60tE5cE6TQXLTnBFl/yBrI3wxHBpvf/boErEf/9SXBSue9kXme+MJxtCajsQV1AlI=
-<<<<<<< HEAD
   file: "/home/travis/.m2/repository/ch/bbw/ConsoleCalculatorWithMaven/0.0.1-SNAPSHOT/ConsoleCalculatorWithMaven-0.0.1-SNAPSHOT.jar"
-=======
-  file: C:\Users\Timo\.m2\repository\ch\bbw\ConsoleCalculatorWithMaven\0.0.1-SNAPSHOT
->>>>>>> parent of 39b496a... .travis.yml update 2
   on:
     repo: leisertimo/ConsoleCalculatorWithMaven
