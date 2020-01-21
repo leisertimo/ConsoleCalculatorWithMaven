@@ -189,4 +189,11 @@ public class CalculatorTest {
 		assertTrue(testee.zinsesZins(10000, 3, 2) == 10612.08);
 	}
 	
+	@Test
+	public void testZinseszinsKapitalMaxValueIsOk() {
+		assertTrue(testee.zinsesZins(Integer.MAX_VALUE, 3, 2) == 2.278926826065576E9);
+	}
+	
+	
+	
 }
